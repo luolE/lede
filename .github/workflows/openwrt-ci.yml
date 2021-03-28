@@ -124,7 +124,7 @@ jobs:
           
           # 编译UEFI固件:
           cat >> .config <<EOF
-          #CONFIG_EFI_IMAGES=y
+          #CONFIG_EFI_IMAGES=n
           EOF
           
           # IPv6支持:
@@ -202,7 +202,7 @@ jobs:
           
           # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
           cat >> .config <<EOF
-          CONFIG_TARGET_IMAGES_PAD=y
+          CONFIG_TARGET_IMAGES_PAD=n
           CONFIG_VMDK_IMAGES=y
           EOF
           
